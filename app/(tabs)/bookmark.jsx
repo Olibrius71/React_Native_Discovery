@@ -3,7 +3,7 @@ import {View, Text} from "react-native";
 const Bookmark = () => {
     return (
         <View>
-            <Text>$</Text>
+            <Text>bookmark</Text>
         </View>
     )
 }

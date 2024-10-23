@@ -1,9 +1,11 @@
 import {Text, View} from "react-native";
 
-export function Profile () {
+const Profile = () => {
     return (
         <View>
             <Text>PROFILE</Text>
         </View>
     )
 }
+
+export default Profile;
