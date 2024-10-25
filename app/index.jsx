@@ -1,12 +1,15 @@
 import { StatusBar } from 'expo-status-bar';
 import {Image, Text, View} from 'react-native';
-import {router} from "expo-router";
+import {Redirect, router} from "expo-router";
 import {SafeAreaView} from "react-native-safe-area-context";
 
 import { images } from "../constants";
 import CustomButton from "../components/CustomButton";
+import {useGlobalContext} from "../context/GlobalProvider";
 
 export default function App() {
+
+    
     return (
         <SafeAreaView className="bg-black h-full">
             <View className="w-full h-full justify-evenly items-center">
@@ -27,7 +30,7 @@ export default function App() {
                     </Text>
                 </View>
                 
-                <CustomButton label="Get Started" fontSizeClass="text-xl" clickFunction={() => router.push("/home")}></CustomButton>
+                <CustomButton label="Get Started" fontSizeClass="text-xl" clickFunction={() => router.push("/sign-up")}></CustomButton>
             </View>
         </SafeAreaView>
     );
