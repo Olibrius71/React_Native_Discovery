@@ -29,14 +29,15 @@ const TabsLayout = () => {
     return (
         <Tabs
             screenOptions={{
-                tabBarActiveTintColor: colors.primary,
-                tabBarInactiveTintColor: "white",
-                tabBarStyle: {
-                    backgroundColor: "black",
-                    borderTopWidth: 1,
-                    paddingTop: 10,
-                    height: 57
-                }
+              headerShown: false,
+              tabBarActiveTintColor: colors.primary,
+              tabBarInactiveTintColor: "white",
+              tabBarStyle: {
+                  backgroundColor: "black",
+                  borderTopWidth: 1,
+                  paddingTop: 10,
+                  height: 57
+              }
             }}
         >
             {TABS.map((tab) => (
