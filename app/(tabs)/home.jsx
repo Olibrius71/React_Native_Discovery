@@ -33,7 +33,9 @@ const Home = () => {
         data={videos}
         keyExtractor={ (item) => item.id }
         renderItem={ ( {item} ) => (
-          <VideoCard video={item} />
+          <VideoCard
+            video={item}
+          />
         )}
         ListHeaderComponent={() => (
           <View className=" flex-col items-center justify-between px-2 mt-1 mb-20 space-y-5">
