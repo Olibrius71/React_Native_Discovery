@@ -55,12 +55,12 @@ const Home = () => {
             
             <SearchInput />
             
-            <View className="flex-1flex-row w-full py-4">
+            <View className="flex-1 flex-col w-full py-4">
               <Text className="text-white text-2xl font-semibold">
                 Latest Videos
               </Text>
               
-              <Trending posts={[ { id:1 }, { id:2 }, {id:3} ]}/>
+              <Trending posts={videos}/>
             </View>
           </View>
         )}
